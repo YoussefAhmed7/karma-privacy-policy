@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy & Account Deletion — Karma Landscape</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --primary-green: #318C2C;
+      --dark-slate: #0F172A;
+      --body-text: #334155;
+      --text-muted: #64748B;
+      --border-light: #E2E8F0;
+      --bg-page: #F8FAFC;
+      --bg-card: #FFFFFF;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+      background-color: var(--bg-page);
+      color: var(--body-text);
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: var(--primary-green);
+      color: #FFFFFF;
+      padding: 40px 20px;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    h1 {
+      font-size: 26px;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    .meta {
+      font-size: 14px;
+      opacity: 0.9;
+    }
+
+    .nav-links {
+      margin-top: 16px;
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .nav-btn {
+      background: #FFFFFF;
+      color: var(--primary-green);
+      padding: 8px 14px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 600;
+    }
+
+    .nav-btn.danger {
+      background: #DC2626;
+      color: #FFFFFF;
+    }
+
+    main {
+      padding: 30px 20px 60px;
+    }
+
+    .card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-light);
+      border-radius: 16px;
+      padding: 28px;
+      margin-bottom: 24px;
+    }
+
+    h2 {
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--dark-slate);
+      margin-bottom: 14px;
+    }
+
+    p {
+      margin-bottom: 12px;
+      font-size: 14.5px;
+    }
+
+    ul, ol {
+      margin-left: 20px;
+      margin-bottom: 14px;
+      font-size: 14.5px;
+    }
+
+    li {
+      margin-bottom: 6px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 14px 0;
+      font-size: 14px;
+    }
+
+    th, td {
+      border: 1px solid var(--border-light);
+      padding: 10px 12px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #F1F5F9;
+      color: var(--dark-slate);
+    }
+
+    #deletion {
+      scroll-margin-top: 30px;
+      border-left: 4px solid #DC2626;
+    }
+
+    .contact-box {
+      background: #F1F5F9;
+      padding: 16px;
+      border-radius: 8px;
+      margin-top: 12px;
+      font-size: 14px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <h1>Privacy Policy & Account Deletion</h1>
+      <p class="meta">Karma Landscape Mobile App • Effective Date: September 2026</p>
+      <div class="nav-links">
+        <a href="#data" class="nav-btn">Data We Collect</a>
+        <a href="#permissions" class="nav-btn">App Permissions</a>
+        <a href="#deletion" class="nav-btn danger">Delete My Account</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <!-- OVERVIEW -->
+    <div class="card">
+      <h2>About This App</h2>
+      <p>
+        The <strong>Karma Landscape</strong> app is used to log and track landscaping maintenance tasks (such as watering, fertilizing, spraying, and pruning), scan asset QR codes on plants, and record service updates.
+      </p>
+      <p>
+        This page details what information the app uses, how it is stored, and how an account can be deleted.
+      </p>
+    </div>
+
+    <!-- DATA COLLECTED -->
+    <div id="data" class="card">
+      <h2>Data We Collect & How We Use It</h2>
+      <p>We only collect the operational information necessary for the application to function:</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Data Type</th>
+            <th>Details</th>
+            <th>Purpose</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Account Credentials</strong></td>
+            <td>Assigned Username (e.g., custom handle/code) and internal authentication identifier.</td>
+            <td>To sign you in and verify your access role. The app does not collect personal email addresses, phone numbers, or passwords for account creation.</td>
+          </tr>
+          <tr>
+            <td><strong>Maintenance Records</strong></td>
+            <td>Selected maintenance action, item identifier, and record timestamp.</td>
+            <td>To log completed plant maintenance and generate service report documents.</td>
+          </tr>
+          <tr>
+            <td><strong>Inspection Photos</strong></td>
+            <td>Before and after photos taken within the app.</td>
+            <td>To document work completion and plant condition. Images are securely hosted on Firebase Cloud Storage.</td>
+          </tr>
+          <tr>
+            <td><strong>App State</strong></td>
+            <td>Active visit status stored locally on the device.</td>
+            <td>To ensure active progress is not lost if the app closes unexpectedly.</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p>
+        <strong>We do not sell, rent, or trade your data, and we do not use third-party tracking or advertising SDKs.</strong>
+      </p>
+    </div>
+
+    <!-- APP PERMISSIONS -->
+    <div id="permissions" class="card">
+      <h2>Permissions Used by the App</h2>
+      <ul>
+        <li>
+          <strong>Camera:</strong> Used exclusively to scan asset QR codes and capture still inspection photos. The app does not record audio, does not request microphone access, and does not record video.
+        </li>
+        <li>
+          <strong>Storage / Media:</strong> Used solely to save generated PDF reports or QR code images to your device, or to save captured photos locally.
+        </li>
+        <li>
+          <strong>Internet:</strong> Required to authenticate sessions, sync maintenance logs, and upload photos to Firebase.
+        </li>
+      </ul>
+      <p>
+        <strong>Note:</strong> We do not track, collect, or request GPS location data.
+      </p>
+    </div>
+
+    <!-- SERVICES -->
+    <div class="card">
+      <h2>Services We Use</h2>
+      <ul>
+        <li>
+          <strong>Google Firebase:</strong> Firebase Authentication manages secure sign-in verification, Cloud Firestore stores maintenance logs, and Cloud Storage hosts inspection images.
+        </li>
+        <li>
+          <strong>WhatsApp:</strong> When scanning an asset code in the client view, the app can open a pre-filled WhatsApp message on your device to reach customer support. The app does not read your private chats or contact list.
+        </li>
+      </ul>
+    </div>
+
+    <!-- ACCOUNT & DATA DELETION -->
+    <div id="deletion" class="card">
+      <h2>Account & Data Deletion</h2>
+      <p>
+        Users have the right to request the deletion of their username account and associated data at any time.
+      </p>
+
+      <p><strong>How to request deletion:</strong></p>
+      <ol>
+        <li>Send an email to: <strong>support@karmalandscape.com</strong></li>
+        <li>Use the subject line: <code>Delete My Account</code></li>
+        <li>State your assigned <strong>Username</strong>.</li>
+      </ol>
+
+      <div class="contact-box">
+        <strong>Contact:</strong> support@karmalandscape.com<br />
+        Requests are processed and the account is permanently deleted within <strong>14 days</strong> of receipt.
+      </div>
+
+      <p style="margin-top: 14px;">
+        <strong>What happens when an account is deleted:</strong>
+      </p>
+      <ul>
+        <li>The assigned username and internal authentication profile are permanently removed from the system.</li>
+        <li>Historical plant maintenance entries (such as a record that an asset was watered on a specific date) remain in the system for service history, but are completely detached from the deleted username.</li>
+      </ul>
+    </div>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Karma Landscape. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
